@@ -54,7 +54,6 @@ import javax.swing.*;
 //     }
 // }
 
-
 // public class project {
 
 //     JMenu menu;
@@ -82,34 +81,58 @@ import javax.swing.*;
 //     }
 // }
 
+// public class project {
+
+//     project() {
+//         // JFrame a = new JFrame("Example");
+
+//         // DefaultListModel<String> lis = new DefaultListModel<>();
+//         // lis.addElement("first element");
+//         // lis.addElement("second element");
+//         // lis.addElement("third element");
+//         // lis.addElement("forth element");
+
+//         // JList<String> b = new JList<>(lis);
+//         // b.setBounds(100, 100, 75, 75);
+
+//         // a.add(b);
+//         // a.setSize(400, 400);
+//         // a.setVisible(true);
+//         // a.setLayout(null);
+
+//         //=========================================================
+
+//         JFrame a = new JFrame("Example");
+//         JLabel b1;
+//         b1 = new JLabel("kunalsuri");
+
+//         b1.setBounds(40,40,90,20);
+//         a.add(b1);
+//         a.setSize(400, 400);
+//         a.setLayout(null);
+//         a.setVisible(true);
+//     }
+
+//     public static void main(String[] args) {
+//         new project();
+//     }
+// }
+
+//====================================================
+// menu bar
 
 public class project {
 
+    JFrame a;
+
     project() {
-        // JFrame a = new JFrame("Example");
+        a = new JFrame("project");
 
-        // DefaultListModel<String> lis = new DefaultListModel<>();
-        // lis.addElement("first element");
-        // lis.addElement("second element");
-        // lis.addElement("third element");
-        // lis.addElement("forth element");
+        String courses[] = { "core java", "advance java", "very advance java" };
+        JComboBox c = new JComboBox(courses);
+        c.setBounds(40, 40, 90, 20);
+        a.add(c);
 
-        // JList<String> b = new JList<>(lis);
-        // b.setBounds(100, 100, 75, 75);
-
-        // a.add(b);
-        // a.setSize(400, 400);
-        // a.setVisible(true);
-        // a.setLayout(null);
-
-        //=========================================================
-
-        JFrame a = new JFrame("Example");
-        JLabel b1;
-        b1 = new JLabel("kunalsuri");
-        
-        b1.setBounds(40,40,90,20);
-        a.add(b1);
         a.setSize(400, 400);
         a.setLayout(null);
         a.setVisible(true);
